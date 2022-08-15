@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basketball Scoreboard</title>
+    <!-- Personal CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main-container">
+        <div class="main-section">
+            <div class="home-container">
+                <h3>HOME</h3>
+                <div class="score-container">
+                    <div id="home-score">0</div>
+                </div>
+                <div class="buttons">
+                    <button onclick="homeAdd1()">+1</button>
+                    <button onclick="homeAdd2()">+2</button>
+                    <button onclick="homeAdd3()">+3</button>
+                </div>
+            </div>
+            <div class="guest-container">
+                <h3>GUEST</h3>
+                <div class="score-container">
+                    <div id="guest-score">0</div>
+                </div>
+                <div class="buttons">
+                    <button onclick="guestAdd1()">+1</button>
+                    <button onclick="guestAdd2()">+2</button>
+                    <button onclick="guestAdd3()">+3</button>
+                </div>
+            </div>
+        </div>
+        <div class="quarter-container">
+            <button id="1q" class="quarter" onclick="activateQuarter1()">1st</button>
+            <button id="2q" class="quarter" onclick="activateQuarter2()">2nd</button>
+            <button id="3q" class="quarter" onclick="activateQuarter3()">3rd</button>
+            <button id="4q" class="quarter" onclick="activateQuarter4()">4th</button>
+        </div>
+        <div class="new-game">
+            <button onclick="newGame()">NEW GAME</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
